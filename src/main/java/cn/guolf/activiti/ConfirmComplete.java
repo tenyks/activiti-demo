@@ -10,6 +10,7 @@ import java.util.Map;
  * 员工确认会签是否已完成
  */
 public class ConfirmComplete implements TaskListener {
+
     public void notify(DelegateTask delegateTask) {
         System.out.println("delegateTask.getEventName() = " + delegateTask.getEventName());
         System.out.println("assignee = " + delegateTask.getAssignee());

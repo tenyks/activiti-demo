@@ -14,7 +14,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Activit工作流demo
+ * Activiti工作流demo
  * 包含功能:多实例会签、子流程并行审批、动态设置下一节点执行人员、任务超时自动完成
  */
 public class App2 {
@@ -33,9 +33,8 @@ public class App2 {
         RepositoryService repositoryService = processEngine.getRepositoryService();
         // 流程部署
         Deployment deployment = repositoryService.createDeployment().addClasspathResource("MultiTask2.bpmn")
-                .name("流程测试")
-                .category("")
-                .deploy();
+                .name("流程测试").category("").deploy();
+
         ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery()
                 .deploymentId(deployment.getId()).singleResult();
         System.out.println("流程名称 ： [" + processDefinition.getName() + "]， 流程ID ： ["
@@ -43,38 +42,43 @@ public class App2 {
 
         // 启动流程
         RuntimeService runtimeService = processEngine.getRuntimeService();
-        List<String> assigneeList = new ArrayList<String>(); //分配任务的人员
+        List<String> assigneeList = new ArrayList<>(); //分配任务的人员
         assigneeList.add("tom");
-        assigneeList.add("jeck");
+        assigneeList.add("jack");
         assigneeList.add("mary");
-        Map<String, Object> vars = new HashMap<String, Object>(); //参数
+
+        Map<String, Object> vars = new HashMap<>(); //参数
         vars.put("assigneeList", assigneeList);
         ProcessInstance processInstance = runtimeService.startProcessInstanceByKey("myProcess", vars);
 
-        System.out.println("流程实例ID = " + processInstance.getId());
+        String procInstId = processInstance.getId();
+        System.out.println("流程实例ID = " + procInstId);
         System.out.println("正在活动的流程节点ID = " + processInstance.getActivityId());
         System.out.println("流程定义ID = " + processInstance.getProcessDefinitionId());
 
         // 查询指定人的任务
         // ============ 会签任务开始 ===========
         TaskService taskService = processEngine.getTaskService();
-        List<Task> taskList1 = taskService.createTaskQuery().taskAssignee("mary").orderByTaskCreateTime().desc().list();
+        List<Task> taskList1 = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("mary").orderByTaskCreateTime().desc().list();
         System.out.println("taskList1 = " + taskList1);
 
-        List<Task> taskList2 = taskService.createTaskQuery().taskAssignee("jeck").orderByTaskCreateTime().desc().list();
+        List<Task> taskList2 = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("jack").orderByTaskCreateTime().desc().list();
         System.out.println("taskList2 = " + taskList2);
 
-        List<Task> taskList3 = taskService.createTaskQuery().taskAssignee("tom").orderByTaskCreateTime().desc().list();
+        List<Task> taskList3 = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("tom").orderByTaskCreateTime().desc().list();
         System.out.println("taskList3 = " + taskList3);
 
-        Map mapConfirm = new HashMap();
-        mapConfirm.put("confirmPass",true);
+        Map<String, Object> mapConfirm = new HashMap<>();
+        mapConfirm.put("confirmPass", true);
 
         Task task1 = taskList1.get(0);
         taskService.complete(task1.getId(),mapConfirm);
 
-        Map mapConfirm1 = new HashMap();
-        mapConfirm1.put("confirmPass",true);
+        Map<String, Object> mapConfirm1 = new HashMap<>();
+        mapConfirm1.put("confirmPass", true);
         Task task2 = taskList2.get(0);
         taskService.complete(task2.getId(),mapConfirm1);
 
@@ -83,8 +87,9 @@ public class App2 {
         // ============ 会签任务结束 ===========
 
         // 部门主任
-        List<Task> taskListDept1 = taskService.createTaskQuery().taskAssignee("dept").orderByTaskCreateTime().desc().list();
-        Map<String,Object> mapDept = new HashMap<String, Object>();
+        List<Task> taskListDept1 = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("dept").orderByTaskCreateTime().desc().list();
+        Map<String,Object> mapDept = new HashMap<>();
         mapDept.put("deptPass",true);
         System.out.println("taskListDept1 = " + taskListDept1);
 
@@ -93,7 +98,8 @@ public class App2 {
         // =============子流程任务开始==========
 
         // 市场专员
-        List<Task> taskListSczy = taskService.createTaskQuery().taskAssignee("sczy").orderByTaskCreateTime().desc().list();
+        List<Task> taskListSczy = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("sczy").orderByTaskCreateTime().desc().list();
         Map<String,Object> mapMarket = new HashMap<String, Object>();
         mapMarket.put("marketPass",false);
         System.out.println("taskListSczy = " + taskListSczy);
@@ -101,24 +107,26 @@ public class App2 {
         taskService.complete(taskListSczy.get(0).getId(),mapMarket);
 
         // 财务专员
-        List<Task> taskListCwzy = taskService.createTaskQuery().taskAssignee("cwzy").orderByTaskCreateTime().desc().list();
+        List<Task> taskListCwzy = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("cwzy").orderByTaskCreateTime().desc().list();
         System.out.println("taskListCwzy = " + taskListCwzy);
-        Map<String,Object> mapFinance = new HashMap<String, Object>();
-        mapFinance.put("financePass",false);
+        Map<String,Object> mapFinance = new HashMap();
+        mapFinance.put("financePass", false);
         taskService.complete(taskListCwzy.get(0).getId(),mapFinance);
 
         // 市场主任
-        List<Task> taskListSczr = taskService.createTaskQuery().taskAssignee("me").orderByTaskCreateTime().desc().list();
+        List<Task> taskListSczr = taskService.createTaskQuery().processInstanceId(procInstId)
+                .taskAssignee("me").orderByTaskCreateTime().desc().list();
         System.out.println("taskListSczr = " + taskListSczr);
-//        Map<String,Object> mapMarketLeader = new HashMap<String, Object>();
-//        mapMarketLeader.put("marketLeaderPass",true);
-//        taskService.complete(taskListSczr.get(0).getId());
+        Map<String,Object> mapMarketLeader = new HashMap<String, Object>();
+        mapMarketLeader.put("marketLeaderPass", true);
+        taskService.complete(taskListSczr.get(0).getId(), mapMarketLeader);
 
         // 财务主任
         List<Task> taskListCwzr = taskService.createTaskQuery().taskAssignee("cwzr").orderByTaskCreateTime().desc().list();
         System.out.println("taskListCwzr = " + taskListCwzr);
 
-//        taskService.complete(taskListCwzr.get(0).getId());
+        taskService.complete(taskListCwzr.get(0).getId());
         // =============子流程任务结束==========
 
         // 技术专员审批
@@ -153,6 +161,7 @@ public class App2 {
                 .orderByHistoricActivityInstanceEndTime()
                 .asc()
                 .list();
+
         for (HistoricActivityInstance historicActivityInstance : historicActivityInstances) {
             System.out.println("任务ID:" + historicActivityInstance.getId());
             System.out.println("流程实例ID:" + historicActivityInstance.getProcessInstanceId());
