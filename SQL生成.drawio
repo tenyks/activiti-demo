@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-04T15:00:46.661Z" agent="5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="-6V0MRbXoyuaRut3PNrf" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-04T15:53:26.452Z" agent="5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="OSEskLLHaeX-xFOU07lV" version="20.5.1" type="github">
   <diagram name="推导原理示意图" id="5d7acffa-a066-3a61-03fe-96351882024d">
     <mxGraphModel dx="1414" dy="1834" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -133,20 +133,26 @@
         <mxCell id="6CtU652WKUI4UOQ74HAb-55" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;direction=south;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="546" y="66" width="60" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="E0FslXfQPX47TbM4qjnE-1" value="查询字段&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="38" y="946" width="120" height="60" as="geometry" />
+        <mxCell id="E0FslXfQPX47TbM4qjnE-1" value="选择字段&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="36" y="938" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E0FslXfQPX47TbM4qjnE-2" value="筛选记录&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="180" y="947" width="120" height="60" as="geometry" />
+        <mxCell id="E0FslXfQPX47TbM4qjnE-2" value="圈定记录集合&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="940" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-32" value="聚集&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="316" y="942" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E0FslXfQPX47TbM4qjnE-3" value="排序&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="E0FslXfQPX47TbM4qjnE-3" value="排序分页&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="317" y="1017" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="E0FslXfQPX47TbM4qjnE-4" value="赋值&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+        <mxCell id="E0FslXfQPX47TbM4qjnE-4" value="字段赋值&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="180" y="1018" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0FslXfQPX47TbM4qjnE-5" value="删除记录&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="36" y="1017" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="E0FslXfQPX47TbM4qjnE-6" value="字段值映射&lt;br&gt;意图信息" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="38" y="1098" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
