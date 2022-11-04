@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-04T11:13:32.349Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="n10pGYqSTmsC8GA-r6fP" version="20.5.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-11-04T11:43:53.296Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="QJAVWoj9Z7aIxtn8Ambf" version="20.5.1" type="github">
   <diagram name="推导原理示意图" id="5d7acffa-a066-3a61-03fe-96351882024d">
     <mxGraphModel dx="1364" dy="1728" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -29,25 +29,25 @@
           <mxGeometry x="185" y="238" width="130" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-12" value="ER设计文件" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="519" y="-1" width="120" height="60" as="geometry" />
+          <mxGeometry x="516" y="-1" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-19" value="查询结果类" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="40" y="194" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-35" value="隐式声明部分" style="swimlane;fontSize=18;" vertex="1" parent="1">
+        <mxCell id="6CtU652WKUI4UOQ74HAb-35" value="隐含式声明部分" style="swimlane;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="20" y="150" width="160" height="441" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-37" value="显式声明部分" style="swimlane;fontSize=18;" vertex="1" parent="1">
           <mxGeometry x="319" y="150" width="160" height="290" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-38" value="ER表绑定标注" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-37">
+        <mxCell id="6CtU652WKUI4UOQ74HAb-38" value="ER表绑定&lt;br&gt;标注" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-37">
           <mxGeometry x="21" y="210" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-36" value="ER字段映射标注" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-37">
-          <mxGeometry x="21" y="130" width="120" height="60" as="geometry" />
+        <mxCell id="6CtU652WKUI4UOQ74HAb-36" value="ER字段映射&lt;br&gt;标注" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-37">
+          <mxGeometry x="21" y="124" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-11" value="ER字段绑定标注" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-37">
-          <mxGeometry x="20" y="50" width="120" height="60" as="geometry" />
+        <mxCell id="6CtU652WKUI4UOQ74HAb-11" value="ER字段绑定&lt;br&gt;标注" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-37">
+          <mxGeometry x="20" y="37" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-39" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4204376220703125;arrowSize=0.2240781917128452;direction=south;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="370" y="511" width="60" height="179" as="geometry" />
@@ -85,7 +85,7 @@
         <mxCell id="6CtU652WKUI4UOQ74HAb-20" value="查询&lt;br&gt;驱动表" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-41">
           <mxGeometry x="13" y="117" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-44" value="元信息" style="swimlane;fontSize=18;startSize=23;" vertex="1" parent="1">
+        <mxCell id="6CtU652WKUI4UOQ74HAb-44" value="语义元信息" style="swimlane;fontSize=18;startSize=23;" vertex="1" parent="1">
           <mxGeometry x="20" y="702" width="425" height="198" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-28" value="字段映射" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
@@ -94,10 +94,10 @@
         <mxCell id="6CtU652WKUI4UOQ74HAb-31" value="OrderBy" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
           <mxGeometry x="150" y="120" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-33" value="赋值表达式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
+        <mxCell id="6CtU652WKUI4UOQ74HAb-33" value="字段赋值&lt;br&gt;表达式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
           <mxGeometry x="290" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-32" value="GroupBy表达式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
+        <mxCell id="6CtU652WKUI4UOQ74HAb-32" value="GroupBy&lt;br&gt;表达式" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
           <mxGeometry x="290" y="120" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-3" value="ER表" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-44">
@@ -107,19 +107,19 @@
           <mxGeometry x="499" y="150" width="160" height="291" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-14" value="外键关系" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-45">
-          <mxGeometry x="20" y="120" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="125" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-15" value="逻辑主键声明" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-45">
-          <mxGeometry x="20" y="200" width="120" height="60" as="geometry" />
+        <mxCell id="6CtU652WKUI4UOQ74HAb-15" value="逻辑主键&lt;br&gt;约定" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-45">
+          <mxGeometry x="18" y="211" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-13" value="ER表定义" style="rounded=1;whiteSpace=wrap;html=1;fontSize=16;" vertex="1" parent="6CtU652WKUI4UOQ74HAb-45">
-          <mxGeometry x="20" y="40" width="120" height="60" as="geometry" />
+          <mxGeometry x="20" y="38" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-47" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.42594451904296876;arrowSize=0.3151368574662642;direction=south;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="548" y="512" width="60" height="174" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-48" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;direction=south;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="61" y="601" width="60" height="80" as="geometry" />
+          <mxGeometry x="66" y="607" width="60" height="80" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-50" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;direction=north;fontSize=16;" vertex="1" parent="1">
           <mxGeometry x="547" y="744" width="60" height="80" as="geometry" />
@@ -134,7 +134,7 @@
           <mxGeometry x="468" y="686" width="80" height="60" as="geometry" />
         </mxCell>
         <mxCell id="6CtU652WKUI4UOQ74HAb-55" value="" style="shape=singleArrow;whiteSpace=wrap;html=1;arrowWidth=0.4;arrowSize=0.4;direction=south;fontSize=16;" vertex="1" parent="1">
-          <mxGeometry x="549" y="66" width="60" height="80" as="geometry" />
+          <mxGeometry x="546" y="66" width="60" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
