@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-08T02:31:26.318Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="zOqkPDhMJxRmsF28CDjU" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-08T02:46:36.652Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="SgrLUOjXTZRwes5GEzgA" version="20.5.3" type="github" pages="2">
   <diagram name="推导原理示意图" id="5d7acffa-a066-3a61-03fe-96351882024d">
     <mxGraphModel dx="1425" dy="1018" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -174,7 +174,7 @@
         <mxCell id="8PSvnoDpurFtGbAOONoP-1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;fontSize=12;" edge="1" parent="1" source="5lbcphP_DRrHil7uiwZ4-3" target="5lbcphP_DRrHil7uiwZ4-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-3" value="识别出意图元信息，使用逻辑推导方式结合ER设计信息推导出用于生成SQL的参数" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=12;" parent="1" vertex="1">
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-3" value="识别出意图元信息，使用逻辑推导方式结合ER设计信息和逻辑规则推导出用于生成SQL的参数" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=12;" parent="1" vertex="1">
           <mxGeometry x="9" y="180" width="350" height="60" as="geometry" />
         </mxCell>
         <mxCell id="8PSvnoDpurFtGbAOONoP-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Times New Roman;fontSize=12;" edge="1" parent="1" source="5lbcphP_DRrHil7uiwZ4-4" target="5lbcphP_DRrHil7uiwZ4-5">
