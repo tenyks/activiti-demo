@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-11-08T02:09:10.107Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="Gf-HcSf3-TKf2-8OJY6S" version="20.5.3" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-08T02:12:46.861Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="yKKkvFbjNMFvfJe8WwMc" version="20.5.3" type="github" pages="2">
   <diagram name="推导原理示意图" id="5d7acffa-a066-3a61-03fe-96351882024d">
     <mxGraphModel dx="1425" dy="1018" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
@@ -267,11 +267,11 @@
             <mxPoint x="15" y="-15" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Emkpl6qQzt-qpR6O0Fhd-2" value="结合ER设计信息，补全条件" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=12;" vertex="1" parent="1">
+        <mxCell id="Emkpl6qQzt-qpR6O0Fhd-2" value="结合ER设计信息和逻辑规则，推导出各选择记录集合的相关表、多表关联逻辑" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=12;" vertex="1" parent="1">
           <mxGeometry x="486" y="-6" width="350" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="cHwGilHE7dSOCQa_7kZ_-1" value="结合ER设计信息，补全条件" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=12;" vertex="1" parent="1">
-          <mxGeometry x="486" y="79" width="350" height="60" as="geometry" />
+        <mxCell id="cHwGilHE7dSOCQa_7kZ_-1" value="结合逻辑规则，根据集合运算要求推导出" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Times New Roman;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="486" y="98" width="350" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
