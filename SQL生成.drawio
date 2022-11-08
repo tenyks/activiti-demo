@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-11-07T15:55:09.852Z" agent="5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36" etag="9_OxShqgRLqozT6wcxFI" version="20.5.1" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2022-11-08T00:31:28.151Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.147 Safari/537.36" etag="EOsrTV4lzkzGTD7Z0sAF" version="20.5.3" type="github" pages="2">
   <diagram name="推导原理示意图" id="5d7acffa-a066-3a61-03fe-96351882024d">
-    <mxGraphModel dx="1203" dy="836" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="1425" dy="1018" grid="0" gridSize="10" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1100" pageHeight="850" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -49,7 +49,7 @@
         <mxCell id="6CtU652WKUI4UOQ74HAb-40" value="" style="shape=orEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=16;" parent="1" vertex="1">
           <mxGeometry x="557" y="722" width="40" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6CtU652WKUI4UOQ74HAb-41" value="推导结论／SQL" style="swimlane;fontSize=18;" parent="1" vertex="1">
+        <mxCell id="6CtU652WKUI4UOQ74HAb-41" value="SQL生成参数" style="swimlane;fontSize=18;" parent="1" vertex="1">
           <mxGeometry x="762" y="627" width="227" height="319" as="geometry" />
         </mxCell>
         <mxCell id="0kNnNipjU8F1ZvYY7ebv-4" value="&lt;span style=&quot;font-size: 16px;&quot;&gt;Select&lt;/span&gt;&lt;br style=&quot;font-size: 16px;&quot;&gt;&lt;span style=&quot;font-size: 16px;&quot;&gt;字段&lt;/span&gt;" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;" parent="6CtU652WKUI4UOQ74HAb-41" vertex="1">
@@ -155,30 +155,30 @@
     </mxGraphModel>
   </diagram>
   <diagram id="mqCea95cdXx6ESsOq5yQ" name="整体流程">
-    <mxGraphModel dx="1203" dy="836" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="983" dy="702" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5lbcphP_DRrHil7uiwZ4-1" target="5lbcphP_DRrHil7uiwZ4-3">
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="5lbcphP_DRrHil7uiwZ4-1" target="5lbcphP_DRrHil7uiwZ4-3" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-1" value="接收API参数，提取API参数类的标注信息" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="100" width="210" height="60" as="geometry" />
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-1" value="接收API参数，提取API参数类的标注信息" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="100" width="330" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="5lbcphP_DRrHil7uiwZ4-2" target="5lbcphP_DRrHil7uiwZ4-1">
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="5lbcphP_DRrHil7uiwZ4-2" target="5lbcphP_DRrHil7uiwZ4-1" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-2" value="开发阶段：导入ER设计，为相关类添加意图声明标注" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" width="210" height="60" as="geometry" />
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-2" value="开发阶段：导入ER设计，为相关类添加意图声明标注" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" width="330" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-3" value="识别出意图元信息，并使用逻辑推导方式推导出用于生成SQL的参数" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="200" width="210" height="60" as="geometry" />
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-3" value="识别出意图元信息，并使用逻辑推导方式推导出用于生成SQL的参数" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="200" width="330" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-4" value="代码生成" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="310" width="210" height="60" as="geometry" />
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-4" value="代码生成" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="310" width="330" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="5lbcphP_DRrHil7uiwZ4-5" value="SQL执行，ORM" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="120" y="420" width="210" height="60" as="geometry" />
+        <mxCell id="5lbcphP_DRrHil7uiwZ4-5" value="SQL执行，ORM" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="120" y="420" width="330" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
